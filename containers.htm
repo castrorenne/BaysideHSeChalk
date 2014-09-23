@@ -1,0 +1,222 @@
+<html>
+<head>
+<title>Containers</title>
+<style type="text/css">
+	/* Header Section */
+	*{ font-family: Arial }
+	#header {
+		background-color:orange;
+		width:100%;
+		/*padding:10px;*/
+		}
+	#quickLinks{ 
+		background-color:orange;
+		width:100%;
+		height:20px;
+		border-bottom:1px dashed white;
+		}
+	#quickLinks ul{
+		list-style-type: none;	
+	}
+	
+	#quickLinks ul li { 
+		display: inline;
+		}
+	#quickLinks a{
+		text-decoration:none;
+	}
+	#quickLinks span{
+		color:white;
+		text-weight:bold;
+		
+	}
+	#logo { 
+		background-color:yellow;
+		width:100%;
+		border-bottom:5px solid white;
+		}
+	/* Style only the img that is in the div layer "logo" */
+	#logo img{
+		width:100%;
+	}
+	#navigation { 
+		background-color:blue;
+		width:100%;
+
+		}
+	#navigation a{
+		width: 10%;
+		background-color:blue;
+		color:white;
+		display:inline-block;
+		padding:5px 0px 5px 0px;
+		border-right:1px solid white;
+		text-decoration:none;
+		text-weight:bold;
+	}
+	#navigation a:hover{
+		background-color:orange;
+		color:black;
+	}
+	#login { 
+		background-color:white;
+		width:100%;
+		}	
+	
+	
+	/* Main */
+	#main {
+		background-color:white;
+		width:100%;
+		/*padding:10px;*/
+		overflow:hidden;
+		}
+	#announcements{ 
+		background-color:white;
+		padding:15px;
+		width:65%;
+		float:left;
+		
+		}
+	.announcement{
+		border-bottom:1px solid gray;
+	}
+	#socialLinks { 
+		background-color:white;
+		width:30%;
+		height:250px;
+		float:right;
+		border:1px solid orange;
+		padding:3px; 
+	}
+	#socialLinks img{ 
+		width:30px;
+	}
+	#events { 
+		background-color:yellow;
+		width:30%;
+		height:250px;
+		float:right;
+		}
+	#links { 
+		background-color:blue;
+		width:30%;
+		height:100px;
+		float:right;
+		}
+	#publication { 
+		background-color:red;
+		width:30%;
+		height:100px;
+		float:right;
+		}	
+	#weather { 
+		background-color:green;
+		width:30%;
+		height:100px;
+		float:right;
+		}
+	#footer{
+		clear:both;
+		background-color:gray;
+		height:200px;
+	}
+	
+</style>
+</head>
+<body>
+
+<!--  Header: Quick Links, Logo, Navigation, LogIn  -->
+<div id="header">
+	<div id="quickLinks">
+		<ul>
+		<li><a href=""><span> > </span> School Home</a></li>
+		<li><a href=""><span> > </span> Login</a></li>
+		<li><a href=""><span> > </span> Help</a></li>
+		<li><a href=""><span> > </span> Search</a></li>
+		</ul>
+	</div>
+	<div id="logo">
+		<img src="images/HS495_CONTEMPORARY_02.jpg">
+	</div>
+	<div id="navigation">
+		<a href="">Directory</a>
+		<a href="">About BHS</a>
+		<a href="">Calendar</a>
+		<a href="">Academics</a>
+		<a href="">Students</a>
+		<a href="">Parents</a>
+		<a href="">Library</a>
+		<a href="">Guidance</a>
+	</div>
+	<div id="login">
+	<form>
+		Login 
+		Username <input type="text" id="username">
+		Password <input type="password" id="password">
+		<input type="button" value="Login">
+		<a href="">Forgot Password</a>
+		Need Help?  <a href="">English</a> | <a href="">Español</a>
+	</form>
+	</div>
+</div>
+<hr/>
+<!-- Main: Announcements, Social Links, Events, Links, Bayside Publication, Weather -->
+<div id="main">
+	<div id="announcements">
+		<h2> Daily Announements </h2>
+		<div class="announcement">
+			<p><b>eChalk Update</b> - All student accounts have been created and all classes have been uploaded. Students: your user name is your firstname.lastname and your password is your 9 digit OSIS#. If you have any questions, please email <a href="mailto:smiller@baysidehighschool.org">smiller@baysidehighschool.org</a>
+			</p>
+			<p>
+			<b>Pupil Path Update</b> - Incoming students will receive a letter containing their pupil path user names and passwords during their guidance counselor appointment. Parent information (user names and passwords) are also on this letter.
+		</div>
+		<div class="announcement">
+		<img src="images/newspaper.png" style="float:left;height:60px" />
+		<p>The 1st meeting for our school newspaper (The Baysider) will be on September 23rd, during period 11, in room B6. We are looking for writers, photographers, and artists. All are welcome!</p>
+		</div>
+		<div class="announcement">
+		<p><b><i>WELCOME BACK!  FALL 2014 INFORMATION</i></b><br/>
+		Please visit <a href="http://www.pupilpath.com/">www.pupilpath.com</a> for Summer Course & Regents grades, listed under 2013-2014, Term 7.<br/><br/>
+
+		Please download a copy of our <a href="http://www.baysidehighschool.org/www/bayside/site/hosting/BHS%20Bell%20Schedule%202014-15.pdf">new bell schedule</a> for the 2014-15 school year!
+		</div>
+	</div>
+	<div id="socialLinks">
+	<img src="http://static3.echalk.net/www/bayside/images/facebook_twitter_logo.jpg" >
+
+	LIKE us on
+	<A href="https://www.facebook.com/BaysideHS" target=_blank>
+	<STRONG>Facebook</STRONG></A><br/>
+	FOLLOW us on 
+	<A href="http://twitter.com/BaysideHSQueens" target=_blank>
+	<STRONG>Twitter</STRONG></A>
+	<BR/><br/>
+	<STRONG>Instructions for logging into:</STRONG><br/>
+	<A href="http://www.baysidehighschool.org/www/bayside/site/hosting/echalk%20for%20website.pdf" target=_blank>
+	<STRONG>E-Chalk</STRONG></A><STRONG>&nbsp;(log in above)</STRONG><br/>
+	<A href="http://www.baysidehighschool.org/www/bayside/site/hosting/PupilPath_Guide_for_Parents.pdf" target=_blank>
+	<STRONG>Pupil Path</STRONG></A>
+	<STRONG>&nbsp;(
+	<A href="http://www.pupilpath.com" target=_blank>pupilpath.com</A>)</STRONG><br/>
+	* In <A href="http://www.baysidehighschool.org/www/bayside/site/hosting/PupilPathInstructions_Korean.pdf" target=_blank>Korean</A><BR>
+	* In <A href="http://www.baysidehighschool.org/www/bayside/site/hosting/PupilPath_Guide_for_Parents_Chinese.pdf" target=_blank>Chinese</A><BR>
+	* In <A href="http://www.baysidehighschool.org/www/bayside/site/hosting/PupilPath%20Guide%20for%20Parents%20in%20Spanish%20(1).pdf" target=_blank>Spanish</A>	
+	
+	</div>
+	<div id="events"></div>
+	<div id="links"></div>
+	<div id="publication"></div>
+	<div id="weather"></div>	
+
+</div>
+<!-- Footer: Address, Company Logo, Company Links, Select Langauge -->
+<div id="footer">
+	<div id="address"></div>
+	<div id="companyLogo"></div>
+	<div id="companyLinks"></div>
+	<div id="language"></div>
+</div>
+
+</body>
+</html>
